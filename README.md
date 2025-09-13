@@ -6,5 +6,5 @@ This repo stores:
 - Backup + bootstrap scripts
 
 ## Usage
-1. Backup: `./backup.sh`
-2. Restore: `./bootstrap.sh`
+- `make backup` → update package lists and push
+- `make bootstrap` → restore packages and symlink configs

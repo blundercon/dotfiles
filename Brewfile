@@ -1,4 +1,5 @@
 brew "fish"
 brew "gh"
+brew "stow"
 brew "vim"
 brew "zellij"
