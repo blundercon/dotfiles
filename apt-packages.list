@@ -9,12 +9,14 @@ efibootmgr
 findutils
 fish
 git
+glances
 gnome-tweaks
 grep
 grub-efi-amd64
 grub-efi-amd64-signed
 gzip
 hostname
+htop
 ibus-table-cangjie-big
 ibus-table-cangjie3
 ibus-table-cangjie5
@@ -35,6 +37,7 @@ libpinyin15
 linux-generic-hwe-24.04
 login
 m17n-db
+ncdu
 ncurses-base
 ncurses-bin
 python3-netifaces
@@ -44,5 +47,7 @@ ubuntu-minimal
 ubuntu-restricted-addons
 ubuntu-standard
 ubuntu-wallpapers
+unattended-upgrades
+virtualbox
 wbritish
 wpasupplicant
