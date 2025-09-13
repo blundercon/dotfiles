@@ -34,4 +34,4 @@ fi
 
 git add .
 git commit -m "Update package/app lists" || echo "ℹ️ No changes to commit"
-git push
+git push || echo "⚠️ Git push skipped (no remote?)"
