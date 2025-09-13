@@ -1,0 +1,5 @@
+# ~/.config/alacritty/alacritty.yml
+font:
+  normal:
+    family: monospace
+    style: Regular
