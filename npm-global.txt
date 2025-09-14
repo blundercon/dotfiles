@@ -1,0 +1,6 @@
+/home/linuxbrew/.linuxbrew/lib
+├── @anthropic-ai/claude-code@1.0.113
+├── @google/gemini-cli@0.4.1
+├── corepack@0.34.0
+└── npm@11.5.1
+

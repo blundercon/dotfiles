@@ -2,6 +2,8 @@ bitwarden
 brave-browser
 bsdutils
 build-essential
+claude-desktop
+code
 curl
 dash
 diffutils
@@ -20,6 +22,8 @@ htop
 ibus-table-cangjie-big
 ibus-table-cangjie3
 ibus-table-cangjie5
+icoutils
+imagemagick
 init
 language-pack-en
 language-pack-en-base
@@ -40,6 +44,7 @@ m17n-db
 ncdu
 ncurses-base
 ncurses-bin
+p7zip-full
 python3-netifaces
 shim-signed
 ubuntu-desktop-minimal
