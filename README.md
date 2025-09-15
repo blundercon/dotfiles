@@ -32,6 +32,8 @@ Result: full environment bootstrap in one command ⚡
     ├── Makefile                # orchestrates dirs, stow, bootstrap, backup
     ├── bootstrap.sh            # installs packages
     ├── backup.sh               # saves package lists + pushes
+    ├── dirs.conf               # directories to create
+    ├── stow.conf               # stow packages to manage
     ├── Brewfile                # Homebrew packages (macOS)
     ├── apt-packages.list       # apt packages (Debian/Ubuntu)
     ├── snap-packages.txt       # snap packages
@@ -39,37 +41,48 @@ Result: full environment bootstrap in one command ⚡
     ├── requirements.txt        # Python packages
     ├── npm-global.txt          # Node global packages
     ├── cargo-list.txt          # Rust packages
-    ├── stow/                   # all configs managed via GNU Stow
-    │   ├── bash/.bashrc
-    │   ├── zsh/.zshrc
-    │   ├── fish/.config/fish/config.fish
-    │   ├── git/.gitconfig
-    │   ├── tmux/.tmux.conf
-    │   ├── zellij/.config/zellij/config.kdl
-    │   ├── vim/.vimrc
-    │   ├── nvim/.config/nvim/init.lua
-    │   ├── alacritty/.config/alacritty/alacritty.yml
-    │   └── vscode/.config/Code/User/settings.json
-    ├── scripts/                # helper scripts
-    └── secrets/                # encrypted secrets (optional)
+    └── stow/                   # all configs managed via GNU Stow
+        ├── alacritty/.config/alacritty/
+        ├── bash/.bashrc
+        ├── fish/.config/fish/
+        ├── git/.gitconfig
+        ├── nvim/.config/nvim/
+        ├── tmux/.tmux.conf
+        ├── vim/.vimrc
+        ├── vscode/.config/Code/User/
+        ├── zellij/.config/zellij/
+        └── zsh/.zshrc
 
 ---
 
 ## 🛠️ Makefile Targets
 
-- `make dirs` → Ensure base directories exist  
-- `make stow` → Symlink configs (adopts existing configs on first run)  
-- `make bootstrap` → Install packages via `bootstrap.sh`  
-- `make backup` → Update package lists and push  
-- `make full-setup` → Run everything (idempotent full setup)  
-- `make clean` → Remove stow symlinks  
-- `make update` → Pull latest repo changes and re-run full setup  
+### Core Targets
+
+- `make dirs` → Ensure base directories exist
+- `make stow` → Symlink configs (adopts existing configs on first run)
+- `make bootstrap` → Install packages via `bootstrap.sh`
+- `make backup` → Update package lists and push
+- `make full-setup` → Run everything (idempotent full setup)
+- `make clean` → Remove stow symlinks
+- `make update` → Pull latest repo changes and re-run full setup
+
+### Configuration Management Helpers
+
+- `make list-dirs` → Show directories tracked in `dirs.conf`
+- `make add-dir DIR=~/newpath` → Add directory to `dirs.conf`
+- `make remove-dir DIR=~/path` → Remove directory from `dirs.conf`
+- `make list-stow` → Show stow packages in `stow.conf`
+- `make add-stow PKG=package` → Add stow package to `stow.conf`
+- `make remove-stow PKG=package` → Remove stow package from `stow.conf`
 
 Example usage:
 
     make full-setup
     make backup
     make update
+    make add-dir DIR=~/projects
+    make add-stow PKG=tmux
 
 ---
 
@@ -77,16 +90,7 @@ Example usage:
 
 - The installer uses **GitHub CLI (`gh`)** to clone/pull this repo.  
 - On the first run, it will ask you to `gh auth login`.  
-- Use HTTPS + Browser login for the easiest flow.  
-
----
-
-## 🔒 Secrets
-
-- `secrets/` can store private configs, encrypted with:  
-  - git-crypt → https://github.com/AGWA/git-crypt  
-  - gopass → https://www.gopass.pw/  
-  - or your password manager CLI  
+- Use HTTPS + Browser login for the easiest flow.
 
 ---
 
@@ -99,14 +103,11 @@ To save the **current state** of your machine back into this repo:
        make backup
 
    This will:
-   - Dump installed package lists (`apt`, `brew`, `snap`, `flatpak`, `pip`, `npm`, `cargo`)  
-   - Stage them in git  
+   - Dump installed package lists (`apt`, `brew`, `snap`, `flatpak`, `pip`, `npm`, `cargo`)
+   - Mirror tracked directories from `dirs.conf` into the repo
+   - Auto-commit and push changes to git
 
-2. Commit & push:
-
-       git add .
-       git commit -m "chore: backup current machine state"
-       git push
+The backup is automatic - no manual commit/push needed!
 
 This way your repo always reflects the **latest working environment**.  
 

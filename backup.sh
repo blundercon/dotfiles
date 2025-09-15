@@ -9,7 +9,13 @@ if [ -f dirs.conf ]; then
   echo "📂 Mirroring tracked dirs in repo..."
   while read -r dir; do
     [[ -z "$dir" || "$dir" =~ ^# ]] && continue
-    expanded=$(eval echo "$dir")
+    expanded="${dir/#\~/$HOME}"
+
+    if [ ! -d "$expanded" ]; then
+      echo "⚠️ Warning: Directory $expanded does not exist, skipping"
+      continue
+    fi
+
     relpath="${expanded/#$HOME\//}"
     mkdir -p "$relpath"
     rsync -a --delete "$expanded/" "$relpath/"
@@ -51,8 +57,15 @@ if [ -f files.conf ]; then
   echo "📄 Backing up specific files..."
   while read -r file; do
     [[ -z "$file" || "$file" =~ ^# ]] && continue
-    expanded=$(eval echo "$file")
-    relpath=$(realpath --relative-to="$HOME" "$expanded")
+    expanded="${file/#\~/$HOME}"
+
+    if [ ! -f "$expanded" ]; then
+      echo "⚠️ Warning: File $expanded does not exist, skipping"
+      continue
+    fi
+
+    # Use portable relative path calculation (realpath --relative-to is GNU-specific)
+    relpath="${expanded#$HOME/}"
     mkdir -p "$(dirname "$relpath")"
     cp "$expanded" "$relpath"
     echo "✅ Backed up $expanded → $relpath"

@@ -34,10 +34,39 @@ experiments/**
 **/secrets*
 **/.DS_Store
 
+# --- Application cache and temporary files (prevent bloat) ---
+**/Cache/**
+**/cache/**
+**/Code Cache/**
+**/Crashpad/**
+**/leveldb/**
+**/Cookies*
+**/DIPS
+**/DawnGraphiteCache/**
+**/*.bdic
+**/Network Persistent State
+**/Local Storage/**
+**/Partitions/**
+**/blob_storage/**
+**/Session Storage/**
+**/*.log
+**/tmp/**
+
 # --- Always keep .gitkeep files ---
 !.gitkeep
 
-.local/*
-.gnupg/*
+# --- Sensitive directories (completely exclude) ---
+.ssh/**
+.gnupg/**
 
+# --- Selective directory inclusion ---
+# .gemini - include safe config, exclude sensitive files
+.gemini/oauth_creds.json
+.gemini/tmp/
+.gemini/*.token
+.gemini/*.key
+
+# .config - include safe configs
 .config/*
+!.config/zellij/
+!.config/alacritty/

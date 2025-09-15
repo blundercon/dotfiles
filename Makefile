@@ -7,18 +7,45 @@ STOW_PKGS := $(shell grep -v '^\s*#' stow.conf | grep -v '^\s*$$')
 
 dirs:
 	@echo "📂 Ensuring directories from dirs.conf..."
-	mkdir -p $(DIRS)
-	chmod 700 ~/.ssh ~/.gnupg 2>/dev/null || true
+	@while read -r dir; do \
+		[ -n "$$dir" ] && [ "$${dir#\#}" = "$$dir" ] && \
+		expanded="$${dir/#\~/$${HOME}}" && \
+		mkdir -p "$$expanded" && \
+		echo "✅ Created directory: $$expanded"; \
+	done < dirs.conf
+	@chmod 700 ~/.ssh ~/.gnupg 2>/dev/null || true
 	@echo "✅ Directories ensured"
 
 stow:
 	@echo "🔗 Stowing packages from stow.conf..."
-	cd stow && stow --adopt $(STOW_PKGS)
+	@if [ ! -d stow ]; then \
+		echo "❌ Error: stow directory not found"; \
+		exit 1; \
+	fi
+	@cd stow && while read -r pkg; do \
+		[ -n "$$pkg" ] && [ "$${pkg#\#}" = "$$pkg" ] && \
+		if [ -d "$$pkg" ]; then \
+			echo "🔗 Stowing $$pkg..."; \
+			stow --adopt "$$pkg" || echo "⚠️ Failed to stow $$pkg"; \
+		else \
+			echo "⚠️ Warning: stow package $$pkg not found, skipping"; \
+		fi; \
+	done < ../stow.conf
 	@echo "✅ Dotfiles symlinked"
 
 unstow:
 	@echo "❌ Unstowing packages from stow.conf..."
-	cd stow && stow -D $(STOW_PKGS)
+	@if [ ! -d stow ]; then \
+		echo "❌ Error: stow directory not found"; \
+		exit 1; \
+	fi
+	@cd stow && while read -r pkg; do \
+		[ -n "$$pkg" ] && [ "$${pkg#\#}" = "$$pkg" ] && \
+		if [ -d "$$pkg" ]; then \
+			echo "❌ Unstowing $$pkg..."; \
+			stow -D "$$pkg" || echo "⚠️ Failed to unstow $$pkg"; \
+		fi; \
+	done < ../stow.conf
 	@echo "✅ Dotfiles unstowed"
 
 bootstrap: dirs stow
@@ -56,7 +83,9 @@ remove-dir:
 	@if [ -z "$(DIR)" ]; then \
 		echo "❌ Usage: make remove-dir DIR=~/.newdir"; \
 	else \
-		grep -v "^$(DIR)$$" dirs.conf > dirs.conf.tmp && mv dirs.conf.tmp dirs.conf; \
+		tmpfile=$$(mktemp) && \
+		grep -v "^$(DIR)$$" dirs.conf > "$$tmpfile" && \
+		mv "$$tmpfile" dirs.conf && \
 		echo "✅ Removed $(DIR) from dirs.conf"; \
 	fi
 
@@ -77,6 +106,8 @@ remove-stow:
 	@if [ -z "$(PKG)" ]; then \
 		echo "❌ Usage: make remove-stow PKG=package"; \
 	else \
-		grep -v "^$(PKG)$$" stow.conf > stow.conf.tmp && mv stow.conf.tmp stow.conf; \
+		tmpfile=$$(mktemp) && \
+		grep -v "^$(PKG)$$" stow.conf > "$$tmpfile" && \
+		mv "$$tmpfile" stow.conf && \
 		echo "✅ Removed $(PKG) from stow.conf"; \
 	fi
