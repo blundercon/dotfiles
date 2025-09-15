@@ -11,16 +11,9 @@ if [ -f dirs.conf ]; then
     [[ -z "$dir" || "$dir" =~ ^# ]] && continue
     expanded=$(eval echo "$dir")
     relpath="${expanded/#$HOME\//}"
-
-    if [ -d "$expanded" ]; then
-      mkdir -p "$relpath"
-      rsync -a --delete "$expanded/" "$relpath/"
-      echo "✅ Mirrored $expanded → $relpath"
-    else
-      mkdir -p "$relpath"
-      touch "$relpath/.gitkeep"
-      echo "⚠️ $expanded not found, created skeleton $relpath"
-    fi
+    mkdir -p "$relpath"
+    rsync -a --delete "$expanded/" "$relpath/"
+    echo "✅ Mirrored $expanded → $relpath"
   done < dirs.conf
 fi
 
