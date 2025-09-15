@@ -1,8 +1,0 @@
-untitled:Untitled-1 {"typeId":""}
-the analyze endpoint should accept a date range which will be used to render the candlestick charts
-
-we will primarily start with the Indian stock market
-data fetch can be done either by the agent or using determenistic APIs
-
-research needs to be done for support/resistance calculation
-
