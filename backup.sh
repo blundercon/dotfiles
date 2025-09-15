@@ -14,7 +14,7 @@ if [ -f dirs.conf ]; then
 
     mkdir -p "$relpath"
 
-    # Always drop a .gitkeep so top-level dir is tracked
+    # Always drop a .gitkeep in the top-level dir
     touch "$relpath/.gitkeep"
 
     echo "✅ Ensured $relpath (mirrored from $expanded)"

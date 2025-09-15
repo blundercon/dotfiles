@@ -2,23 +2,29 @@
 .gemini/oauth_creds.json
 .gemini/tmp/
 
-# --- Ignore contents of mirrored dirs, keep dirs themselves ---
+# --- Ignore contents of mirrored dirs, keep .gitkeep placeholders ---
 code/**
+!code/.gitkeep
 !code/**/.gitkeep
 
 downloads/**
+!downloads/.gitkeep
 !downloads/**/.gitkeep
 
 media/**
+!media/.gitkeep
 !media/**/.gitkeep
 
 tmp/**
+!tmp/.gitkeep
 !tmp/**/.gitkeep
 
 docs/**
+!docs/.gitkeep
 !docs/**/.gitkeep
 
 experiments/**
+!experiments/.gitkeep
 !experiments/**/.gitkeep
 
 # --- Sensitive file patterns ---
@@ -28,5 +34,5 @@ experiments/**
 **/secrets*
 **/.DS_Store
 
-# --- Keep empty dirs tracked ---
+# --- Always keep .gitkeep files ---
 !.gitkeep
