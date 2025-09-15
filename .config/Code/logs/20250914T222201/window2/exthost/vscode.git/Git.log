@@ -353,3 +353,7 @@
 2025-09-15 08:45:41.115 [info] > git check-ignore -v -z --stdin [13ms]
 2025-09-15 08:45:42.806 [info] > git check-ignore -v -z --stdin [11ms]
 2025-09-15 08:45:47.245 [info] > git check-ignore -v -z --stdin [13ms]
+2025-09-15 08:46:05.204 [info] > git ls-files --stage -- .gitignore [4ms]
+2025-09-15 08:46:05.212 [info] > git cat-file -s 1c7dffa839664c371d92012357acb858a0930629 [1ms]
+2025-09-15 08:46:05.221 [info] > git show --textconv :.gitignore [2ms]
+2025-09-15 08:46:10.408 [info] > git check-ignore -v -z --stdin [13ms]

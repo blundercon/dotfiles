@@ -40,4 +40,4 @@ experiments/**
 .local/*
 .gnupg/*
 
-.config/*/logs/*
+.config/Code/*
