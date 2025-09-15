@@ -2,7 +2,8 @@ certifi==2025.8.3
 charset-normalizer==3.4.3
 click==8.2.1
 et_xmlfile==2.0.0
--e git+ssh://git@bitbucket.org/whatfix/whatfix-dev-setup.git@a8ac9a5d4373c3d07b9bbc2aa3d807ba819c4646#egg=github_migration
+# Editable install with no version control (github-migration==1.0.0)
+-e /Users/harikishen.hosamana/projects/github-migration
 idna==3.10
 markdown-it-py==4.0.0
 mdurl==0.1.2

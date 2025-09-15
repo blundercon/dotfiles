@@ -21,26 +21,6 @@ mirror_directory() {
 
 echo "💾 Starting backup..."
 
-# --- Mirror working dirs from dirs.conf (structure only, contents ignored by .gitignore) ---
-# Note: Tool directories (.gemini, .claude, .config/zellij) are now managed by stow packages
-if [ -f dirs.conf ]; then
-  echo "📂 Mirroring working directory structure..."
-  while read -r dir; do
-    [[ -z "$dir" || "$dir" =~ ^# ]] && continue
-    expanded="${dir/#\~/$HOME}"
-
-    if [ ! -d "$expanded" ]; then
-      echo "⚠️ Warning: Directory $expanded does not exist, skipping"
-      continue
-    fi
-
-    relpath="${expanded/#$HOME\//}"
-    mkdir -p "$relpath"
-    mirror_directory "$expanded" "$relpath"
-    echo "✅ Mirrored $expanded → $relpath"
-  done < dirs.conf
-fi
-
 # --- Backup package lists ---
 echo "📦 Backing up package lists..."
 
