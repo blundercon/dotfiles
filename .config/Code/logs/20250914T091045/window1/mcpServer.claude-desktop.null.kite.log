@@ -1,0 +1,51 @@
+2025-09-14 09:11:12.578 [info] Starting server kite
+2025-09-14 09:11:12.582 [info] Connection state: Starting
+2025-09-14 09:11:12.592 [info] Starting server from LocalProcess extension host
+2025-09-14 09:11:12.596 [info] Connection state: Starting
+2025-09-14 09:11:12.597 [info] Connection state: Running
+2025-09-14 09:11:13.465 [warning] [server stderr] [66492] Using automatically selected callback port: 23948
+2025-09-14 09:11:13.465 [warning] [server stderr] [66492] [66492] Connecting to remote server: https://mcp.kite.trade/mcp
+2025-09-14 09:11:13.466 [warning] [server stderr] [66492] Using transport strategy: http-first
+2025-09-14 09:11:13.898 [warning] [server stderr] [66492] Connected to remote server using StreamableHTTPClientTransport
+2025-09-14 09:11:13.898 [warning] [server stderr] [66492] Local STDIO server running
+2025-09-14 09:11:13.898 [warning] [server stderr] [66492] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+2025-09-14 09:11:13.899 [warning] [server stderr] [66492] Press Ctrl+C to exit
+2025-09-14 09:11:13.899 [warning] [server stderr] [66492] [Local→Remote] initialize
+2025-09-14 09:11:13.899 [warning] [server stderr] [66492] {
+2025-09-14 09:11:13.899 [warning] [server stderr]   "jsonrpc": "2.0",
+2025-09-14 09:11:13.899 [warning] [server stderr]   "id": 1,
+2025-09-14 09:11:13.899 [warning] [server stderr]   "method": "initialize",
+2025-09-14 09:11:13.899 [warning] [server stderr]   "params": {
+2025-09-14 09:11:13.900 [warning] [server stderr]     "protocolVersion": "2025-06-18",
+2025-09-14 09:11:13.900 [warning] [server stderr]     "capabilities": {
+2025-09-14 09:11:13.900 [warning] [server stderr]       "roots": {
+2025-09-14 09:11:13.900 [warning] [server stderr]         "listChanged": true
+2025-09-14 09:11:13.900 [warning] [server stderr]       },
+2025-09-14 09:11:13.900 [warning] [server stderr]       "sampling": {},
+2025-09-14 09:11:13.900 [warning] [server stderr]       "elicitation": {}
+2025-09-14 09:11:13.900 [warning] [server stderr]     },
+2025-09-14 09:11:13.900 [warning] [server stderr]     "clientInfo": {
+2025-09-14 09:11:13.900 [warning] [server stderr]       "name": "Visual Studio Code (via mcp-remote 0.1.29)",
+2025-09-14 09:11:13.901 [warning] [server stderr]       "version": "1.104.0"
+2025-09-14 09:11:13.901 [warning] [server stderr]     }
+2025-09-14 09:11:13.901 [warning] [server stderr]   }
+2025-09-14 09:11:13.901 [warning] [server stderr] }
+2025-09-14 09:11:14.227 [warning] [server stderr] [66492] [Remote→Local] 1
+2025-09-14 09:11:14.239 [warning] [server stderr] [66492] [Local→Remote] notifications/initialized
+2025-09-14 09:11:14.239 [warning] [server stderr] [66492] [Local→Remote] tools/list
+2025-09-14 09:11:14.821 [warning] [server stderr] [66492] [Remote→Local] 2
+2025-09-14 09:11:14.822 [info] Discovered 22 tools
+2025-09-14 09:11:31.506 [warning] [server stderr] [66492] [Local→Remote] tools/call
+2025-09-14 09:11:31.849 [warning] [server stderr] [66492] [Remote→Local] 3
+2025-09-14 09:11:46.045 [warning] [server stderr] [66492] [Local→Remote] tools/call
+2025-09-14 09:11:46.433 [warning] [server stderr] [66492] [Remote→Local] 4
+2025-09-14 09:12:54.371 [warning] [server stderr] [66492] Error from remote server: StreamableHTTPError: Streamable HTTP error: Failed to open SSE stream:
+2025-09-14 09:12:54.372 [warning] [server stderr]     at StreamableHTTPClientTransport._startOrAuthSse (file:///home/blundercon/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13301:15)
+2025-09-14 09:12:54.372 [warning] [server stderr]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+2025-09-14 09:12:54.373 [warning] [server stderr]   code: 524
+2025-09-14 09:12:54.373 [warning] [server stderr] }
+2025-09-14 09:12:54.374 [warning] [server stderr] [66492] Error from remote server: StreamableHTTPError: Streamable HTTP error: Failed to open SSE stream:
+2025-09-14 09:12:54.374 [warning] [server stderr]     at StreamableHTTPClientTransport._startOrAuthSse (file:///home/blundercon/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13301:15)
+2025-09-14 09:12:54.375 [warning] [server stderr]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+2025-09-14 09:12:54.375 [warning] [server stderr]   code: 524
+2025-09-14 09:12:54.375 [warning] [server stderr] }

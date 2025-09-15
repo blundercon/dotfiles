@@ -1,0 +1,68 @@
+2025-09-14 08:55:53.834 [info] Started local extension host with pid 63620.
+2025-09-14 08:55:54.928 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-09-14 08:55:56.512 [info] [perf] Render performance baseline is 25ms
+2025-09-14 08:57:59.515 [warning] [GitHub.copilot]: Cannot register 'github.copilot.advanced'. This property is already registered.
+2025-09-14 08:58:00.364 [error] [Extension Host] (node:63620) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-09-14 08:58:01.776 [error] [Extension Host] Failed to load MSAL binary: Error: Cannot find module './msal-node-runtime'
+Require stack:
+- /usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+- /usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1372:15)
+    at Module.n._resolveFilename (node:electron/js2c/utility_init:2:16249)
+    at Module.t._resolveFilename (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22931)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1028:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1033:22)
+    at Module._load (node:internal/modules/cjs/loader:1182:37)
+    at Module.c._load (node:electron/js2c/node_init:2:17993)
+    at Module.e._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+    at Module.t._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+    at Module.r._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+    at Module.require (node:internal/modules/cjs/loader:1452:12)
+    at Module.require (/home/blundercon/.vscode/extensions/github.copilot-chat-0.31.0/dist/extension.js:81:36096)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.7247 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:231600)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Module.9020 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:526968)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Object.6244 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:215773)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Object.3226 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:129004)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Object.2583 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:105051)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Object.8428 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:452019)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at Object.5256 (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:172891)
+    at n (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559324)
+    at /usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559691
+    at Object.<anonymous> (/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js:2:559798)
+    at Module._compile (node:internal/modules/cjs/loader:1696:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1829:10)
+    at Module.load (node:internal/modules/cjs/loader:1430:32)
+    at Module._load (node:internal/modules/cjs/loader:1253:12)
+    at Module.c._load (node:electron/js2c/node_init:2:17993)
+    at Module.e._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:391:5984)
+    at Module.t._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:209:22649)
+    at Module.r._load (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:25551)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:242:24)
+    at Module.require (node:internal/modules/cjs/loader:1452:12)
+    at Module.require (/home/blundercon/.vscode/extensions/github.copilot-chat-0.31.0/dist/extension.js:81:36096)
+    at require (node:internal/modules/helpers:135:16)
+    at aJ.Cb (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:240:1253)
+2025-09-14 08:58:02.275 [warning] Failed to update in-progress status for chat session type 'claude-code': Can not find provider for claude-code
+2025-09-14 09:04:05.222 [error] [LanguageModelToolsService#invokeTool] Error from tool mcp_kite_get_profile with parameters {}:
+Canceled: Canceled: Canceled
+    at Js.cancel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:81401)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2159:7016
+    at Map.forEach (<anonymous>)
+    at R5i.W (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2159:6995)
+    at oG._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2159:4224)
+    at oG.k (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:5421)
+    at oG.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:5835)
+    at b6.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:104488)
+    at w6.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:2465)
+    at eii.$onDidChangeState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:586:124578)

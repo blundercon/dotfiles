@@ -1,0 +1,65 @@
+2025-09-14 22:22:08.832 [info] [main] Log level: Info
+2025-09-14 22:22:08.832 [info] [main] Validating found git in: "git"
+2025-09-14 22:22:08.832 [info] [main] Using git "2.43.0" from "git"
+2025-09-14 22:22:08.832 [info] [Model][doInitialScan] Initial repository scan started
+2025-09-14 22:22:08.832 [info] > git rev-parse --show-toplevel [37ms]
+2025-09-14 22:22:09.040 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [210ms]
+2025-09-14 22:22:09.048 [info] [Model][openRepository] Opened repository (path): /home/blundercon/code/experiments/financial-data-analyst
+2025-09-14 22:22:09.048 [info] [Model][openRepository] Opened repository (real path): /home/blundercon/code/experiments/financial-data-analyst
+2025-09-14 22:22:09.048 [info] [Model][openRepository] Opened repository (kind): repository
+2025-09-14 22:22:09.065 [info] > git config --get commit.template [7ms]
+2025-09-14 22:22:09.075 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 22:22:09.076 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [2ms]
+2025-09-14 22:22:09.076 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 22:22:09.089 [info] > git status -z -uall [8ms]
+2025-09-14 22:22:09.089 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-09-14 22:22:09.113 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [12ms]
+2025-09-14 22:22:09.113 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 22:22:09.114 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for feature/001-trading-assistant-mvp: Error: No such branch: feature/001-trading-assistant-mvp.
+2025-09-14 22:22:09.136 [info] > git config --get commit.template [22ms]
+2025-09-14 22:22:09.136 [info] > git rev-parse --show-toplevel [27ms]
+2025-09-14 22:22:09.177 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 22:22:09.185 [info] > git rev-parse --show-toplevel [41ms]
+2025-09-14 22:22:09.190 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [13ms]
+2025-09-14 22:22:09.191 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 22:22:09.201 [info] > git status -z -uall [6ms]
+2025-09-14 22:22:09.202 [info] > git rev-parse --show-toplevel [12ms]
+2025-09-14 22:22:09.208 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-09-14 22:22:09.265 [info] > git rev-parse --show-toplevel [57ms]
+2025-09-14 22:22:09.271 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-14 22:22:09.279 [info] > git rev-parse --show-toplevel [3ms]
+2025-09-14 22:22:09.286 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-14 22:22:09.292 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-14 22:22:09.298 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-14 22:22:09.304 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-14 22:22:09.316 [info] > git rev-parse --show-toplevel [8ms]
+2025-09-14 22:22:09.318 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-09-14 22:22:09.581 [info] > git check-ignore -v -z --stdin [2ms]
+2025-09-14 22:22:09.732 [info] > git config --get commit.template [5ms]
+2025-09-14 22:22:09.737 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 22:22:09.739 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [2ms]
+2025-09-14 22:22:09.739 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 22:22:09.749 [info] > git status -z -uall [5ms]
+2025-09-14 22:22:09.754 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-09-14 22:22:13.178 [info] > git check-ignore -v -z --stdin [1ms]
+2025-09-14 22:22:34.907 [info] > git check-ignore -v -z --stdin [0ms]
+2025-09-14 22:22:39.058 [info] > git check-ignore -v -z --stdin [0ms]
+2025-09-14 23:33:36.374 [info] > git check-ignore -v -z --stdin [1ms]
+2025-09-14 23:33:36.803 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 23:33:36.804 [info] > git config --get commit.template [11ms]
+2025-09-14 23:33:36.804 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [2ms]
+2025-09-14 23:33:36.804 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 23:33:36.816 [info] > git status -z -uall [6ms]
+2025-09-14 23:33:36.817 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-09-14 23:36:09.169 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 23:36:09.170 [info] > git config --get commit.template [13ms]
+2025-09-14 23:36:09.170 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [1ms]
+2025-09-14 23:36:09.171 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 23:36:09.187 [info] > git status -z -uall [7ms]
+2025-09-14 23:36:09.188 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-14 23:36:16.830 [info] [Git][getRemotes] No remotes found in the git config file
+2025-09-14 23:36:16.831 [info] > git config --get commit.template [10ms]
+2025-09-14 23:36:16.831 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/001-trading-assistant-mvp refs/remotes/feature/001-trading-assistant-mvp [1ms]
+2025-09-14 23:36:16.831 [warning] [Git][getBranch] No such branch: feature/001-trading-assistant-mvp
+2025-09-14 23:36:16.845 [info] > git status -z -uall [7ms]
+2025-09-14 23:36:16.846 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]

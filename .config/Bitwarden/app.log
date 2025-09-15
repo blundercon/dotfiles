@@ -1,0 +1,42 @@
+[2025-09-13 21:14:15.993] [info]  No state version found, assuming empty state.
+[2025-09-13 21:14:16.215] [info]  Coredumps are disabled in renderer process
+[2025-09-13 21:14:16.216] [info]  Disabling memory dumps in main process
+[2025-09-13 21:14:17.101] [info]  [Native Messaging IPC] Clearing connected apps
+[2025-09-13 21:14:17.102] [info]  State version: 72
+[2025-09-13 21:14:17.275] [info]  Retrieving application id
+[2025-09-13 21:14:18.075] [info]  Environment did not respond in time, emitting previous config.
+[2025-09-13 21:14:25.421] [info]  Retrieving application id
+[2025-09-13 21:14:25.447] [info]  Retrieving application id
+[2025-09-13 21:14:29.363] [info]  Retrieving application id
+[2025-09-13 21:14:31.544] [info]  [KeyService] Deriving master key took 758ms
+[2025-09-13 21:14:31.549] [info]  Retrieving application id
+[2025-09-13 21:14:43.297] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.321] [error] [Credential Storage Listener] setPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.352] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.354] [error] SetAccessToken: storing encrypted access token in secure storage failed. Falling back to disk storage. Error: New Access token key unable to be retrieved from secure storage.
+[2025-09-13 21:14:43.371] [error] [Credential Storage Listener] setPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.398] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.399] [error] SetRefreshToken: storing refresh token in secure storage failed. Falling back to disk storage. Error: Refresh token failed to save to secure storage.
+[2025-09-13 21:14:43.443] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.478] [info]  Using SignalR for notifications
+[2025-09-13 21:14:43.516] [error] [Credential Storage Listener] deletePassword failed Error: DBus error zbus error org.freedesktop.DBus.Error.UnknownMethod: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.525] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.527] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.550] [info]  Successfully submitted two factor token
+[2025-09-13 21:14:43.571] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.572] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.591] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.611] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:43.625] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:45.323] [info]  [SignalR] WebSocket connected to wss://notifications.bitwarden.com/hub?access_token=[REDACTED]
+[2025-09-13 21:14:45.324] [info]  [SignalR] Using HubProtocol 'messagepack'.
+[2025-09-13 21:14:45.712] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:45.991] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:46.035] [info]  [SearchService]: isSearchable took 10.300000000745058 undefined
+[2025-09-13 21:14:46.059] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:46.089] [error] [Credential Storage Listener] getPassword failed Error: DBus error service error org.freedesktop.zbus.Error: Object does not exist at path “/org/freedesktop/secrets/collection/login”
+[2025-09-13 21:14:46.246] [info]  [CipherService]: decrypt complete took 124.09999999776483 [ [ 'Items', 326 ] ]
+[2025-09-13 21:14:46.377] [info]  [SearchService]: index complete took 117.09999999776483 [ [ 'Items', 326 ] ]
+[2025-09-13 21:14:46.409] [info]  [SearchService]: isSearchable took 8.899999998509884 undefined
+[2025-09-13 21:14:46.455] [info]  [SearchService]: index complete took 46.19999999925494 [ [ 'Items', 326 ] ]
+[2025-09-13 21:14:48.346] [info]  Autotype disabled.

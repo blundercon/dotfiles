@@ -1,0 +1,205 @@
+2025-09-14T03:57:23.746Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T03:57:23.764Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T03:57:23.772Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T03:57:23.772Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:57:23.773Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T03:57:23.774Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:57:23.774Z [kite] [info] Server transport closed (intentional shutdown) { metadata: undefined }
+2025-09-14T03:57:23.774Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:57:23.780Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T03:57:23.780Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:57:23.772Z [kite] [info] Shutting down server... { metadata: undefined }
+2025-09-14T03:57:23.774Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T03:57:23.794Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T03:57:23.801Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T03:57:23.849Z [kite] [info] Message from client: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0} { metadata: undefined }
+2025-09-14T03:58:23.933Z [kite] [info] Message from client: {"jsonrpc":"2.0","method":"notifications/cancelled","params":{"requestId":0,"reason":"McpError: MCP error -32001: Request timed out"}} { metadata: undefined }
+2025-09-14T03:58:23.934Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:58:23.934Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T03:58:23.934Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:58:23.934Z [kite] [info] Server transport closed unexpectedly, this is likely due to the process exiting early. If you are developing this MCP server you can add output to stderr (i.e. `console.error('...')` in JavaScript, `print('...', file=sys.stderr)` in python) and it will appear in this log. { metadata: undefined }
+2025-09-14T03:58:23.934Z [kite] [error] Server disconnected. For troubleshooting guidance, please visit our [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging) { metadata: { context: 'connection', stack: undefined } }
+2025-09-14T03:58:23.942Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T03:58:23.942Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:59:12.606Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T03:59:12.606Z [kite] [info] Shutting down server... { metadata: undefined }
+2025-09-14T03:59:31.117Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T03:59:31.118Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T03:59:31.138Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T03:59:31.149Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T03:59:31.148Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T03:59:31.156Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T03:59:31.208Z [kite] [info] Message from client: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0} { metadata: undefined }
+2025-09-14T03:59:31.214Z [kite] [info] Message from client: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0} { metadata: undefined }
+2025-09-14T04:00:31.211Z [kite] [info] Message from client: {"jsonrpc":"2.0","method":"notifications/cancelled","params":{"requestId":0,"reason":"McpError: MCP error -32001: Request timed out"}} { metadata: undefined }
+2025-09-14T04:00:31.212Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:00:31.215Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:00:31.215Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:00:31.215Z [kite] [info] Server transport closed unexpectedly, this is likely due to the process exiting early. If you are developing this MCP server you can add output to stderr (i.e. `console.error('...')` in JavaScript, `print('...', file=sys.stderr)` in python) and it will appear in this log. { metadata: undefined }
+2025-09-14T04:00:31.215Z [kite] [error] Server disconnected. For troubleshooting guidance, please visit our [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging) { metadata: { context: 'connection', stack: undefined } }
+2025-09-14T04:00:31.221Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:00:31.221Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:00:31.325Z [kite] [info] Message from client: {"jsonrpc":"2.0","method":"notifications/cancelled","params":{"requestId":0,"reason":"McpError: MCP error -32001: Request timed out"}} { metadata: undefined }
+2025-09-14T04:00:31.326Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:00:31.326Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:00:31.326Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:00:31.327Z [kite] [info] Server transport closed unexpectedly, this is likely due to the process exiting early. If you are developing this MCP server you can add output to stderr (i.e. `console.error('...')` in JavaScript, `print('...', file=sys.stderr)` in python) and it will appear in this log. { metadata: undefined }
+2025-09-14T04:00:31.327Z [kite] [error] Server disconnected. For troubleshooting guidance, please visit our [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging) { metadata: { context: 'connection', stack: undefined } }
+2025-09-14T04:00:31.335Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:00:31.335Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:03:50.839Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T04:03:50.846Z [kite] [info] Initializing server... { metadata: undefined }
+2025-09-14T04:03:50.862Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T04:03:50.873Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T04:03:50.885Z [kite] [info] Using MCP server command: /usr/bin/npx with args and path: {
+  metadata: {
+    args: [ 'mcp-remote', 'https://mcp.kite.trade/mcp', [length]: 2 ],
+    paths: [
+      '/usr/local/bin',
+      '/usr/bin',
+      '/bin',
+      '/home/linuxbrew/.linuxbrew/bin',
+      '/home/linuxbrew/.linuxbrew/sbin',
+      '/usr/local/sbin',
+      '/usr/local/bin',
+      '/usr/sbin',
+      '/usr/bin',
+      '/sbin',
+      '/bin',
+      '/usr/games',
+      '/usr/local/games',
+      '/snap/bin',
+      '/snap/bin',
+      [length]: 15
+    ]
+  }
+} %o
+2025-09-14T04:03:50.894Z [kite] [info] Server started and connected successfully { metadata: undefined }
+2025-09-14T04:03:50.939Z [kite] [info] Message from client: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0} { metadata: undefined }
+2025-09-14T04:03:50.947Z [kite] [info] Message from client: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0} { metadata: undefined }
+2025-09-14T04:04:50.940Z [kite] [info] Message from client: {"jsonrpc":"2.0","method":"notifications/cancelled","params":{"requestId":0,"reason":"McpError: MCP error -32001: Request timed out"}} { metadata: undefined }
+2025-09-14T04:04:50.941Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:04:50.943Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:04:50.944Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:04:50.944Z [kite] [info] Server transport closed unexpectedly, this is likely due to the process exiting early. If you are developing this MCP server you can add output to stderr (i.e. `console.error('...')` in JavaScript, `print('...', file=sys.stderr)` in python) and it will appear in this log. { metadata: undefined }
+2025-09-14T04:04:50.944Z [kite] [error] Server disconnected. For troubleshooting guidance, please visit our [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging) { metadata: { context: 'connection', stack: undefined } }
+2025-09-14T04:04:50.949Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:04:50.949Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:04:51.000Z [kite] [info] Message from client: {"jsonrpc":"2.0","method":"notifications/cancelled","params":{"requestId":0,"reason":"McpError: MCP error -32001: Request timed out"}} { metadata: undefined }
+2025-09-14T04:04:51.000Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:04:51.001Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:04:51.001Z [kite] [info] Client transport closed { metadata: undefined }
+2025-09-14T04:04:51.001Z [kite] [info] Server transport closed unexpectedly, this is likely due to the process exiting early. If you are developing this MCP server you can add output to stderr (i.e. `console.error('...')` in JavaScript, `print('...', file=sys.stderr)` in python) and it will appear in this log. { metadata: undefined }
+2025-09-14T04:04:51.001Z [kite] [error] Server disconnected. For troubleshooting guidance, please visit our [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging) { metadata: { context: 'connection', stack: undefined } }
+2025-09-14T04:04:51.004Z [kite] [info] Server transport closed { metadata: undefined }
+2025-09-14T04:04:51.004Z [kite] [info] Client transport closed { metadata: undefined }

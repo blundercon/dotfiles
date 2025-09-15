@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "atlassian": {
+            "command": "http",
+            "args": "https://mcp.atlassian.com/v1/sse"
+        },
+        "kite": {
+            "command": "npx",
+            "args": ["mcp-remote", "https://mcp.kite.trade/mcp"]
+        }
+    }
+}

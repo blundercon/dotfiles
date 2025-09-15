@@ -1,0 +1,6 @@
+.gemini/oauth_creds.json
+.gemini/tmp
+
+code/personal/*
+code/work/*
+code/experiments/*

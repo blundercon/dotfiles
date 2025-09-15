@@ -1,0 +1,6 @@
+2025-09-14 12:17:43.366 [error] #77: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-09-14 12:22:53.381 [error] #78: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-09-14 13:13:07.500 [error] #88: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
+2025-09-14 16:13:27.309 [error] #124: https://main.vscode-cdn.net/extensions/marketplace.json - error GET net::ERR_INTERNET_DISCONNECTED
+2025-09-14 16:17:18.814 [error] #125: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2025-09-14 16:17:21.558 [error] #126: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED

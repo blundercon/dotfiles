@@ -1,0 +1,168 @@
+2025-09-14 09:26:22 [info] Starting app {
+  appVersion: '0.13.11',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.19.0'
+}
+2025-09-14 09:26:22 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:26:23 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-09-14 09:26:23 [warn] Could not find org id when attempting to fetch blocklist
+2025-09-14 09:26:23 [warn] No blocklist data received
+2025-09-14 09:26:50 [info] Starting app {
+  appVersion: '0.13.11',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.19.0'
+}
+2025-09-14 09:26:51 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:27:06 [info] Config file written
+2025-09-14 09:27:17 [info] App is quitting, cleaning up...
+2025-09-14 09:27:20 [info] Starting app {
+  appVersion: '0.13.11',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.19.0'
+}
+2025-09-14 09:27:20 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:27:22 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-09-14 09:27:22 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 09:27:22 [info] Saved 1 blocklists with 0 entries
+2025-09-14 09:27:22 [info] Successfully updated blocklist
+2025-09-14 09:27:23 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:27:23 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 09:27:23 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:27:23 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 09:29:12 [info] App is quitting, cleaning up...
+2025-09-14 09:29:27 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:29:28 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:29:29 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-09-14 09:29:30 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 09:29:30 [info] Saved 1 blocklists with 0 entries
+2025-09-14 09:29:30 [info] Successfully updated blocklist
+2025-09-14 09:29:31 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:29:31 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 09:29:31 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:29:31 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 09:31:22 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:825:25)
+      at IW (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:134:9839)
+      at App.<anonymous> (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:228:186060)
+      at App.emit (node:events:518:28)
+      at n.emit (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:28:30755) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '/usr/lib/claude-desktop/app.asar'
+  }
+}
+2025-09-14 09:31:22 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:31:22 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:31:55 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:825:25)
+      at IW (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:134:9839)
+      at App.<anonymous> (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:228:186060)
+      at App.emit (node:events:518:28)
+      at n.emit (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:28:30755) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '/usr/lib/claude-desktop/app.asar'
+  }
+}
+2025-09-14 09:31:55 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:31:55 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:32:08 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:825:25)
+      at IW (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:134:9839)
+      at App.<anonymous> (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:228:186060)
+      at App.emit (node:events:518:28)
+      at n.emit (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:28:30755) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '/usr/lib/claude-desktop/app.asar'
+  }
+}
+2025-09-14 09:32:08 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:32:08 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:32:13 [info] Config file written
+2025-09-14 09:32:28 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:825:25)
+      at IW (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:134:9839)
+      at App.<anonymous> (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:228:186060)
+      at App.emit (node:events:518:28)
+      at n.emit (/usr/lib/claude-desktop/app.asar/.vite/build/index.js:28:30755) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '/usr/lib/claude-desktop/app.asar'
+  }
+}
+2025-09-14 09:32:28 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:32:28 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:33:46 [info] Starting app {
+  appVersion: '0.12.125',
+  isPackaged: true,
+  platform: 'linux',
+  arch: 'x64',
+  nodeVersion: '22.18.0'
+}
+2025-09-14 09:33:46 [info] App is installed, enabling initial check and auto-updates
+2025-09-14 09:33:48 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-09-14 09:33:48 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 09:33:48 [info] Saved 1 blocklists with 0 entries
+2025-09-14 09:33:48 [info] Successfully updated blocklist
+2025-09-14 09:33:50 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:33:50 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 09:33:50 [info] Checking if UtilityProcess should be used for extension kite
+2025-09-14 09:33:50 [warn] UtilityProcess Check: Extension kite not found in installed extensions
+2025-09-14 11:33:49 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 11:33:49 [info] Saved 1 blocklists with 0 entries
+2025-09-14 11:33:49 [info] Successfully updated blocklist
+2025-09-14 13:33:49 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 13:33:49 [info] Saved 1 blocklists with 0 entries
+2025-09-14 13:33:49 [info] Successfully updated blocklist
+2025-09-14 15:33:49 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 15:33:49 [info] Saved 1 blocklists with 0 entries
+2025-09-14 15:33:49 [info] Successfully updated blocklist
+2025-09-14 16:17:55 [info] Failed to load URL: https://claude.ai/chat/8d1dd9e9-e9ca-4032-b9a8-f482453b5d50
+2025-09-14 17:33:49 [info] Successfully fetched blocklist from https://claude.ai/api/organizations/c3ff8c1c-35c4-4be0-bf1a-10239c1541e9/dxt/blocklist with 0 entries
+2025-09-14 17:33:49 [info] Saved 1 blocklists with 0 entries
+2025-09-14 17:33:49 [info] Successfully updated blocklist

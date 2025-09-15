@@ -1,0 +1,22 @@
+.gemini/oauth_creds.json
+.gemini/tmp
+
+# Ignore contents of mirrored dirs, keep dirs themselves
+code/**
+!code/.gitkeep
+
+downloads/**
+media/**
+tmp/**
+docs/**
+experiments/**
+
+# Sensitive files
+**/*.pem
+**/*.key
+**/id_*
+**/secrets*
+**/.DS_Store
+
+# Keep empty dirs tracked
+!.gitkeep

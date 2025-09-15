@@ -1,0 +1,216 @@
+2025-09-14 09:17:18.818 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-09-14 09:17:18.818 [info] Using the Electron fetcher.
+2025-09-14 09:17:18.818 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-09-14 09:17:18.818 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-09-14 09:17:18.818 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-09-14 09:17:20.967 [info] Logged in as blundercon
+2025-09-14 09:17:21.377 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: text-embedding-3-small-512,metis-1024-I16-Binary. Deprecated: 
+2025-09-14 09:17:21.380 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: text-embedding-3-small-512,metis-1024-I16-Binary. Deprecated: 
+2025-09-14 09:17:21.380 [info] WorkspaceChunkSearchService: using embedding type text-embedding-3-small-512
+2025-09-14 09:17:21.403 [info] FetcherService: electron-fetch succeeded
+2025-09-14 09:17:21.512 [info] FetcherService: electron-fetch succeeded
+2025-09-14 09:17:21.513 [info] Got Copilot token for blundercon
+2025-09-14 09:17:21.526 [info] activationBlocker from 'languageModelAccess' took for 2587ms
+2025-09-14 09:17:21.577 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-09-14 09:17:21.577 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-09-14 09:17:21.591 [info] Registering default platform agent...
+2025-09-14 09:17:21.592 [info] activationBlocker from 'conversationFeature' took for 2656ms
+2025-09-14 09:17:21.950 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-09-14 09:17:22.461 [info] Fetched model metadata in 1520ms 019105ed-16f1-4763-a5ba-e678cf103ba5
+2025-09-14 09:17:22.739 [info] Latest entry: ccreq:latest.copilotmd
+2025-09-14 09:17:22.739 [info] ccreq:050164c3.copilotmd | markdown
+2025-09-14 09:17:23.042 [info] Fetched auto model in 301ms.
+2025-09-14 09:34:54.540 [info] Fetched model metadata in 1088ms 389b7acb-0f67-48e2-a0a4-fdf0889f312c
+2025-09-14 09:34:54.751 [info] ccreq:f7835f3e.copilotmd | markdown
+2025-09-14 09:34:55.146 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:34:55.147 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:34:56.895 [info] message 0 returned. finish reason: [tool_calls]
+2025-09-14 09:34:56.895 [info] request done: requestId: [93b151c2-1e74-4b03-9897-21f4a74d7ff8] model deployment ID: []
+2025-09-14 09:34:56.897 [info] ccreq:a2651bf8.copilotmd | success | gpt-4.1 | 1751ms | [panel/editAgent]
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:35:03.547 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:05.662 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:35:05.662 [info] request done: requestId: [93b151c2-1e74-4b03-9897-21f4a74d7ff8] model deployment ID: []
+2025-09-14 09:35:05.664 [info] ccreq:fc76e70d.copilotmd | success | gpt-4.1 | 2117ms | [panel/editAgent]
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:35:11.816 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:15.642 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:35:15.642 [info] request done: requestId: [d58db721-c65c-4f9c-930b-349f8ffab0ee] model deployment ID: []
+2025-09-14 09:35:15.643 [info] ccreq:4852b202.copilotmd | success | gpt-4.1 | 3826ms | [panel/editAgent]
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:35:59.213 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:00.954 [info] message 0 returned. finish reason: [tool_calls]
+2025-09-14 09:36:00.954 [info] request done: requestId: [2dfdbb62-5d07-4abb-90c7-53997156ac4c] model deployment ID: []
+2025-09-14 09:36:00.956 [info] ccreq:c1e2948f.copilotmd | success | gpt-4.1 | 1744ms | [panel/editAgent]
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:01.395 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:03.837 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:36:03.837 [info] request done: requestId: [2dfdbb62-5d07-4abb-90c7-53997156ac4c] model deployment ID: []
+2025-09-14 09:36:03.839 [info] ccreq:b9a0c1e4.copilotmd | success | gpt-4.1 | 2443ms | [panel/editAgent]
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:11.741 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:14.700 [info] message 0 returned. finish reason: [tool_calls]
+2025-09-14 09:36:14.700 [info] request done: requestId: [e4488eaa-c9b1-4a5f-8831-cdce93019b26] model deployment ID: []
+2025-09-14 09:36:14.702 [info] ccreq:651fa267.copilotmd | success | gpt-4.1 | 2960ms | [panel/editAgent]
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:15.142 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:17.295 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:36:17.295 [info] request done: requestId: [e4488eaa-c9b1-4a5f-8831-cdce93019b26] model deployment ID: []
+2025-09-14 09:36:17.296 [info] ccreq:7c840be6.copilotmd | success | gpt-4.1 | 2154ms | [panel/editAgent]
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:28.272 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:30.139 [info] message 0 returned. finish reason: [tool_calls]
+2025-09-14 09:36:30.139 [info] request done: requestId: [b131ca4b-5260-4fa7-9c2d-b25fa67f0c12] model deployment ID: []
+2025-09-14 09:36:30.140 [info] ccreq:e2a32013.copilotmd | success | gpt-4.1 | 1869ms | [panel/editAgent]
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:34.258 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:37.931 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:36:37.932 [info] request done: requestId: [b131ca4b-5260-4fa7-9c2d-b25fa67f0c12] model deployment ID: []
+2025-09-14 09:36:37.933 [info] ccreq:1d9fb65a.copilotmd | success | gpt-4.1 | 3675ms | [panel/editAgent]
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:45.835 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:49.670 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:36:49.670 [info] request done: requestId: [356ba9e3-24a4-489b-8321-ac03a5fddbd6] model deployment ID: []
+2025-09-14 09:36:49.672 [info] ccreq:0f2d198f.copilotmd | success | gpt-4.1 | 3836ms | [panel/editAgent]
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:36:57.983 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:02.649 [info] message 0 returned. finish reason: [tool_calls]
+2025-09-14 09:37:02.649 [info] request done: requestId: [f47d7206-eaa0-4384-ad60-4e310be88cc8] model deployment ID: []
+2025-09-14 09:37:02.651 [info] ccreq:e30e6b5b.copilotmd | success | gpt-4.1 | 4668ms | [panel/editAgent]
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_cancel_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_get_historical_data failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_modify_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_modify_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_gtt_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'minimum'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'maxLength'
+2025-09-14 09:37:09.449 [warning] Tool mcp_kite_place_order failed validation: object has unsupported schema keyword 'default'
+2025-09-14 09:37:12.090 [info] message 0 returned. finish reason: [stop]
+2025-09-14 09:37:12.090 [info] request done: requestId: [f47d7206-eaa0-4384-ad60-4e310be88cc8] model deployment ID: []
+2025-09-14 09:37:12.091 [info] ccreq:e8fc2e27.copilotmd | success | gpt-4.1 | 2642ms | [panel/editAgent]
