@@ -2,6 +2,19 @@
 .gemini/oauth_creds.json
 .gemini/tmp/
 
+# Claude CLI sensitive content - exclude these directories/files
+stow/claude-desktop/.claude/ide/
+stow/claude-desktop/.claude/local/
+stow/claude-desktop/.claude/plugins/
+stow/claude-desktop/.claude/projects/
+stow/claude-desktop/.claude/shell-snapshots/
+stow/claude-desktop/.claude/statsig/
+stow/claude-desktop/.claude/todos/
+stow/claude-desktop/.claude/anthropic_key_helper.sh
+stow/claude-desktop/.claude/**/*.key
+stow/claude-desktop/.claude/**/*.token
+stow/claude-desktop/.claude/**/secrets*
+
 # --- Ignore contents of mirrored dirs, keep .gitkeep placeholders ---
 code/**
 !code/.gitkeep

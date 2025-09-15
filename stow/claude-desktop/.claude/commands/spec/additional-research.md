@@ -1,0 +1,1 @@
+I want you to go through the implementation plan and implementation details, looking for areas that could benefit from additional research. For those areas that you identify that require further research, I want you to update the research document with additional details and spawn parallel research tasks to clarify any details using research from the web if required.

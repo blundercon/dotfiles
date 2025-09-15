@@ -1,0 +1,1 @@
+Verify if necessary files required by https://github.com/github/spec-kit/ are created or not. If not, use `uvx --from git+https://github.com/github/spec-kit.git specify init --here --ai claude --ignore-agent-tools --script sh` to configure it.
