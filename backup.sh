@@ -2,6 +2,23 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+# Portable directory mirroring function
+mirror_directory() {
+    local src="$1"
+    local dest="$2"
+
+    if command -v rsync &>/dev/null; then
+        rsync -a --delete "$src/" "$dest/"
+    else
+        # Fallback using portable cp
+        rm -rf "$dest"
+        mkdir -p "$dest"
+        if [ -d "$src" ] && [ "$(ls -A "$src" 2>/dev/null)" ]; then
+            cp -R "$src"/* "$dest"/ 2>/dev/null || true
+        fi
+    fi
+}
+
 echo "💾 Starting backup..."
 
 # --- Mirror working dirs from dirs.conf (structure only, contents ignored by .gitignore) ---
@@ -19,38 +36,44 @@ if [ -f dirs.conf ]; then
 
     relpath="${expanded/#$HOME\//}"
     mkdir -p "$relpath"
-    rsync -a --delete "$expanded/" "$relpath/"
+    mirror_directory "$expanded" "$relpath"
     echo "✅ Mirrored $expanded → $relpath"
   done < dirs.conf
 fi
 
 # --- Backup package lists ---
+echo "📦 Backing up package lists..."
+
+# Create packages directory if it doesn't exist
+mkdir -p packages
+
+# Legacy package list backups (for compatibility)
 if command -v apt &>/dev/null; then
-  apt list --installed > apt-packages.list || true
+  apt list --installed > apt-packages.list 2>/dev/null || true
 fi
 
 if command -v brew &>/dev/null; then
-  brew bundle dump --file=Brewfile --force || true
+  brew bundle dump --file=Brewfile --force 2>/dev/null || true
 fi
 
 if command -v snap &>/dev/null; then
-  snap list > snap-packages.txt || true
+  snap list > snap-packages.txt 2>/dev/null || true
 fi
 
 if command -v flatpak &>/dev/null; then
-  flatpak list --app > flatpak-packages.txt || true
+  flatpak list --app > flatpak-packages.txt 2>/dev/null || true
 fi
 
 if command -v pip &>/dev/null; then
-  pip freeze > requirements.txt || true
+  pip freeze > requirements.txt 2>/dev/null || true
 fi
 
 if command -v npm &>/dev/null; then
-  npm list -g --depth=0 > npm-global.txt || true
+  npm list -g --depth=0 > npm-global.txt 2>/dev/null || true
 fi
 
 if command -v cargo &>/dev/null; then
-  cargo install --list | awk '{print $1}' > cargo-list.txt || true
+  cargo install --list | awk '{print $1}' > cargo-list.txt 2>/dev/null || true
 fi
 
 # --- Backup explicit files from files.conf ---

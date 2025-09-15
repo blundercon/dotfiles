@@ -2,14 +2,17 @@
         list-dirs add-dir remove-dir list-stow add-stow remove-stow
 
 # Load dirs and stow packages dynamically
-DIRS := $(shell grep -v '^\s*#' dirs.conf | grep -v '^\s*$$')
-STOW_PKGS := $(shell grep -v '^\s*#' stow.conf | grep -v '^\s*$$')
+DIRS := $(shell grep -v '^[[:space:]]*\#' dirs.conf | grep -v '^[[:space:]]*$$')
+STOW_PKGS := $(shell grep -v '^[[:space:]]*\#' stow.conf | grep -v '^[[:space:]]*$$')
 
 dirs:
 	@echo "📂 Ensuring directories from dirs.conf..."
 	@while read -r dir; do \
 		[ -n "$$dir" ] && [ "$${dir#\#}" = "$$dir" ] && \
-		expanded="$${dir/#\~/$${HOME}}" && \
+		case "$$dir" in \
+			\~/*) expanded="$${HOME}$${dir#\~}" ;; \
+			*) expanded="$$dir" ;; \
+		esac && \
 		mkdir -p "$$expanded" && \
 		echo "✅ Created directory: $$expanded"; \
 	done < dirs.conf
