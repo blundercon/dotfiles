@@ -29,7 +29,7 @@ stow:
 		[ -n "$$pkg" ] && [ "$${pkg#\#}" = "$$pkg" ] && \
 		if [ -d "$$pkg" ]; then \
 			echo "🔗 Stowing $$pkg..."; \
-			stow --adopt "$$pkg" || echo "⚠️ Failed to stow $$pkg"; \
+			stow --adopt -t $$HOME "$$pkg" || echo "⚠️ Failed to stow $$pkg"; \
 		else \
 			echo "⚠️ Warning: stow package $$pkg not found, skipping"; \
 		fi; \
@@ -46,7 +46,7 @@ unstow:
 		[ -n "$$pkg" ] && [ "$${pkg#\#}" = "$$pkg" ] && \
 		if [ -d "$$pkg" ]; then \
 			echo "❌ Unstowing $$pkg..."; \
-			stow -D "$$pkg" || echo "⚠️ Failed to unstow $$pkg"; \
+			stow -t $$HOME -D "$$pkg" || echo "⚠️ Failed to unstow $$pkg"; \
 		fi; \
 	done < ../stow.conf
 	@echo "✅ Dotfiles unstowed"

@@ -1,19 +1,40 @@
+[push]
+	autoSetupRemote = true
+[user]
+	name = Harikishen Hosamana
+	email = harikishen.hosamana@whatfix.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [alias]
-	tree = log --decorate --graph --oneline
-	ch = checkout
-	st = status
-	chm = checkout mai
-	chd = checkout dev
-	b = branch
-	cm = commit
-	cmm = commit -m
-	pl = pull
-	plr = pull --rebase
-	ps = push
-	psf = push --force
-	chb = checkout -b
-	rb = rebase
-	rbi = rebase -i
-	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-	d = diff
-	sh = stash
+        tree = log --decorate --graph --oneline
+        ch = checkout
+        st = status
+        chm = checkout main
+        chd = checkout dev
+        b = branch
+        cm = commit
+        cmm = commit -m
+        pl = pull
+        plr = pull --rebase
+        ps = push
+        psf = push --force
+        chb = checkout -b
+        rb = rebase
+        rbi = rebase -i
+        alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+        d = diff
+	df = diff
+        sh = stash
+[http]
+	postBuffer = 2g
+[https]
+	postBuffer = 2g
+[pack]
+	packSizeLimit = 2g
+	windowMemory = 2g
+[core]
+	hooksPath = /Users/harikishen.hosamana/.git/hooks

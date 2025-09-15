@@ -1,3 +1,4 @@
-# ~/.bashrc
-export PATH="$HOME/bin:$PATH"
-alias ll='ls -la'
+. "$HOME/.local/bin/env"
+
+eval "$(direnv hook bash)"
+direnv allow ~/.envrc
