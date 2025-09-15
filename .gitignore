@@ -1,22 +1,32 @@
+# --- Explicit sensitive paths ---
 .gemini/oauth_creds.json
-.gemini/tmp
+.gemini/tmp/
 
-# Ignore contents of mirrored dirs, keep dirs themselves
+# --- Ignore contents of mirrored dirs, keep dirs themselves ---
 code/**
-!code/.gitkeep
+!code/**/.gitkeep
 
 downloads/**
-media/**
-tmp/**
-docs/**
-experiments/**
+!downloads/**/.gitkeep
 
-# Sensitive files
+media/**
+!media/**/.gitkeep
+
+tmp/**
+!tmp/**/.gitkeep
+
+docs/**
+!docs/**/.gitkeep
+
+experiments/**
+!experiments/**/.gitkeep
+
+# --- Sensitive file patterns ---
 **/*.pem
 **/*.key
 **/id_*
 **/secrets*
 **/.DS_Store
 
-# Keep empty dirs tracked
+# --- Keep empty dirs tracked ---
 !.gitkeep
