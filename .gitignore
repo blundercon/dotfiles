@@ -59,14 +59,11 @@ experiments/**
 .ssh/**
 .gnupg/**
 
-# --- Selective directory inclusion ---
-# .gemini - include safe config, exclude sensitive files
-.gemini/oauth_creds.json
-.gemini/tmp/
-.gemini/*.token
-.gemini/*.key
+# --- Tool directories now managed by stow packages ---
+# .gemini -> stow/gemini-cli/.gemini/
+# .claude -> stow/claude-desktop/.claude/
+# .config/zellij -> stow/zellij/.config/zellij/
+# .config/alacritty -> stow/alacritty/.config/alacritty/
 
-# .config - include safe configs
+# Ignore any remaining .config contents not managed by stow
 .config/*
-!.config/zellij/
-!.config/alacritty/

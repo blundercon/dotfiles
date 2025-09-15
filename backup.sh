@@ -4,9 +4,10 @@ cd "$(dirname "$0")"
 
 echo "💾 Starting backup..."
 
-# --- Mirror dirs from dirs.conf into repo (with contents) ---
+# --- Mirror working dirs from dirs.conf (structure only, contents ignored by .gitignore) ---
+# Note: Tool directories (.gemini, .claude, .config/zellij) are now managed by stow packages
 if [ -f dirs.conf ]; then
-  echo "📂 Mirroring tracked dirs in repo..."
+  echo "📂 Mirroring working directory structure..."
   while read -r dir; do
     [[ -z "$dir" || "$dir" =~ ^# ]] && continue
     expanded="${dir/#\~/$HOME}"
