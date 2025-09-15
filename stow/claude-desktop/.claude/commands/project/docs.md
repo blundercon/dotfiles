@@ -14,7 +14,7 @@ If you refactored the entire architecture, I'll update architecture docs, README
 
 ## Mode 1: Documentation Overview (Default)
 
-When you run `/docs` without context, I'll:
+When you run `/project:docs` without context, I'll:
 - **Glob** all markdown files (README, CHANGELOG, docs/*)
 - **Read** each documentation file
 - **Analyze** documentation coverage
@@ -39,9 +39,9 @@ KEY FINDINGS
 
 ## Mode 2: Smart Update
 
-When you run `/docs update` or after implementations, I'll:
+When you run `/project:docs update` or after implementations, I'll:
 
-1. **Run `/understand`** to analyze current codebase
+1. **Run `/project:understand`** to analyze current codebase
 2. **Compare** code reality vs documentation
 3. **Identify** what needs updating:
    - New features not documented
@@ -87,11 +87,9 @@ Based on what happened in session:
 ## Integration with Commands
 
 Works seamlessly with:
-- `/understand` - Get current architecture first
-- `/contributing` - Update contribution guidelines
-- `/test` - Document test coverage changes
-- `/scaffold` - Add new component docs
-- `/security-scan` - Update security documentation
+- `/project:understand` - Get current architecture first
+- `/project:contributing` - Update contribution guidelines
+- `/code:test` - Document test coverage changes
 
 ## Documentation Rules
 
@@ -134,10 +132,8 @@ After analysis, I'll ask: "How should I proceed?"
 ### When to Use /docs
 
 Simply run `/docs` after any significant work:
-- After `/understand` - Ensure docs match code reality
-- After `/fix-todos` or bug fixes - Update all affected documentation
-- After `/scaffold` or new features - Document what was added
-- After `/security-scan` or `/review` - Document findings and decisions
+- After `/project:understand` - Ensure docs match code reality
+- After `/project:fix-todos` or bug fixes - Update all affected documentation
 - After major refactoring - Update architecture, migration guides, everything
 
 **I'll figure out what needs updating based on what actually happened, not rigid rules.**
@@ -178,37 +174,37 @@ I can manage:
 
 **After analyzing code:**
 ```bash
-/understand && /docs
+/project:understand && /project:docs
 # Analyzes entire codebase, then updates docs to match reality
 ```
 
 **After fixing technical debt:**
 ```bash
-/fix-todos && /test && /docs
+/project:fix-todos && /code:test && /project:docs
 # Fixes TODOs, verifies everything works, documents changes
 ```
 
 **After major refactoring:**
 ```bash
-/fix-imports && /format && /docs
+/code:fix-imports && /code:format && /project:docs
 # Fixes imports, formats code, updates architecture docs
 ```
 
 **Before creating PR:**
 ```bash
-/review && /docs
+/code:review && /project:docs
 # Reviews code, then ensures docs reflect any issues found
 ```
 
 **After adding features:**
 ```bash
-/scaffold component && /test && /docs
+/code:test && /project:docs
 # Creates component, tests it, documents the new API
 ```
 
 ### Simple Usage
 
-Just run `/docs` and I'll figure out what you need:
+Just run `/project:docs` and I'll figure out what you need:
 - Fresh project? I'll show what docs exist
 - Just coded? I'll update the relevant docs
 - Long session? I'll document everything

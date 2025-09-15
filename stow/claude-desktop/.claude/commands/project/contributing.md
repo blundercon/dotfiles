@@ -84,12 +84,12 @@ I'll understand EVERYTHING about your situation:
 **A. Session Context** (if you've been working):
 - Read CLAUDE.md for complete session history
 - Analyze ALL files changed during session
-- Check test results from `/test` runs
-- Review any `/review` or `/security-scan` results
+- Check test results from `/code:test` runs
+- Review any `/code:review` results
 - Understand features implemented
 
 **B. Cold Start Context** (running standalone):
-- Run `/understand` to map entire codebase
+- Run `/project:understand` to map entire codebase
 - Analyze all local commits vs remote
 - Detect uncommitted changes
 - Compare fork with upstream (if applicable)
@@ -282,7 +282,7 @@ Based on context, I'll:
 **Intelligent Session Analysis Example:**
 If you've been working and made changes:
 ```
-You: /contributing
+You: /project:contributing
 
 Me: Analyzing your session...
 - Found: You fixed auth bug in UserService.js
@@ -303,9 +303,9 @@ Options:
 **Post-Implementation Auto-Actions:**
 - Scan remote for linkable issues
 - Create missing issues automatically
-- Run `/format` on all changed files
-- Run `/test` to ensure everything passes
-- Run `/docs` to update documentation
+- Run `/code:format` on all changed files
+- Run `/code:test` to ensure everything passes
+- Run `/project:docs` to update documentation
 - Create PR with maximum context
 
 **Important**: I will NEVER:
